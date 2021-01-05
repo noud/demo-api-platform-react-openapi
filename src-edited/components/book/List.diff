@@ -1,0 +1,11 @@
+--- my-app/src/components/book/List.orig.js	2021-01-06 00:29:42.827000000 +0100
++++ my-app/src/components/book/List.js	2021-01-06 00:21:44.195552878 +0100
+@@ -88,7 +88,7 @@
+                   <td>{item['author']}</td>
+                   <td>{item['publicationDate']}</td>
+                   <td>{item['cover']}</td>
+-                  <td>{item['reviews']}</td>
++                  <td>{this.renderLinks('reviews', item['reviews'])}</td>
+                   <td>
+                     <Link to={`show/${linkStringForFrontEnd(encodeURIComponent(item['@id']), 'books')}`}>
+                       <span className="fa fa-search" aria-hidden="true" />

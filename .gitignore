@@ -1,0 +1,6 @@
+# generated
+my-app/
+# NPM YARM
+node_modules/
+# Eclipse
+.project
